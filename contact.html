@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onresize="resetMenu(window.innerWidth)">
+<header>
+  <a href="index.html" class="active"> <div class="logo-container">
+    <img class="logo" src="img/Logo.PNG">
+    <h3>Chili_Pot</h3>
+  </div></a>
+  <nav id="print-nav">
+    <div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i id="myIcon" class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <ul id="myLinks">
+      <li><a href="Capsicuum annuum.html"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum annuum</span></a></li>
+      <li><a href="#baccatum"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;baccatum</span></a></li>
+      <li><a href="#chinense"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;hinense</span></a></li>
+      <li><a href="#frutescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;frutescens</span></a></li>
+      <li><a href="#pubescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;pubescens</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="contact-main">
+  <form>
+    <h3>Haben Sie Fragen?</h3>
+    <div class="form-field">
+      <label for="email">Ihre Emailadresse:</label>
+      <input id="email" type="email">
+    </div>
+    <div class="form-field">
+      <label for="chili-sorts">Ich habe eine Frage zu folgender Art:</label>
+      <select id="chili-sorts" name="country">
+        <option value="C. annuum">C. annuum</option>
+        <option value="C. baccaum">C. baccatum</option>
+        <option value="C. chinense">C. chinense</option>
+        <option value="C. frutescens">C. frutescens</option>
+        <option value="C. pubescens">C. pubescens</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label for="message">Ihre Nachricht:</label>
+      <textarea id="message">Hier können Sie uns schreiben!</textarea>
+    </div>
+    <div class="form-field">
+      <input id="submit" type="submit">
+    </div>
+  </form>
+</main>
+
+<footer id="print-footer">
+  <a href="contact.html">Kontakt</a>
+  <a>DSGVO</a>
+  <a>Impressium</a>
+  <a href="#top">Zum Seitenanfang</a>
+</footer>
+
+<script>
+  function resetMenu(width) {
+    if (width >= 900){
+      document.getElementById("myLinks").removeAttribute("style");
+    }
+  }
+</script>
+</body>
+</html>

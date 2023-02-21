@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C. annuum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onresize="resetMenu(window.innerWidth)">
+<header>
+  <a href="index.html" class="active" id="top"> <div class="logo-container">
+    <img class="logo" src="img/Logo.PNG">
+    <h3>Chili_Pot</h3>
+  </div></a>
+  <nav id="print-nav">
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i id="myIcon" class="fa fa-bars"></i>
+    </a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <ul id="myLinks">
+      <li><a class="bold" href="Capsicuum annuum.html"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum annuum</span></a></li>
+      <li><a href="#baccatum"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;baccatum</span></a></li>
+      <li><a href="#chinense"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;hinense</span></a></li>
+      <li><a href="#frutescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;frutescens</span></a></li>
+      <li><a href="#pubescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;pubescens</span></a></li>
+    </ul>
+  </nav>
+
+  <!--JavaScript function: when display block -> unsichtbar -->
+
+</header>
+<main>
+  <div class="main-img">
+    <h1>Capsicum annuum: Sorten, Rezepte und Pflanztipps</h1>
+    <img src="img/Capsicum annuum.jpg">
+  </div>
+  <div class="grid">
+    <div class="chili-sort">
+      <h3>Corno di Toro</h3>
+      <p>20 Zentimeter Länge erreichen die Chilischoten der Corno di Toro. Sie weisen ein dickes Fruchtfleisch auf und bestechen durch einen süßen Geschmack ohne jegliche Schärfe.</p>
+      <img class="sort-img" src="img/corno-di-toro.jpg">
+    </div>
+    <div class="chili-sort">
+      <h3>Tequila Sunrise</h3>
+      <p>Gelbe, circa 15 Zentimeter lange Chilis, die mit einer orangenen Farbe einen echten Hingucker bildet. Das Aroma ist leicht fruchtig.</p>
+      <img class="sort-img" src="img/tequila-sunrise.webp">
+    </div>
+    <div class="chili-sort">
+      <h3>Anaheim</h3>
+      <p>Sehr beliebt in hiesigen Gefilden ist die milde Anaheim-Sorte. Die Schoten sind dickfleischig und in Grün oder Rot erhältlich. Aufgrund verschiedener Untersorten wie die Anaheim-Kalifornien oder Anaheim-New-Mexican, variiert der</p>
+      <img class="sort-img" src="img/anaheim.jpg">
+    </div>
+    <div class="recipe">
+      <picture>
+        <source media="(max-width: 700px)" srcset="img/chili-sin-carne-quadrat.png">
+        <source srcset="img/chili-sin-carne.webp">
+        <img src="img/chili-sin-carne.webp" alt="">
+      </picture>
+      <div>
+        <h5>Rezept-Tipp</h5>
+        <h3>Chili sin Carne</h3>
+        <date>13.2.2023</date>
+        <p>Ein herzhaftes Chili sin Carne darf jeden Tag auf den Tisch. Das vegetarische Rezept schmeckt immer.</p>
+        <a>Weiterlesen...</a>
+      </div>
+    </div>
+    <div class="recipe">
+      <picture>
+        <source media="(max-width: 700px)" srcset="img/chilisosse-quadrat.png">
+        <source srcset="img/chilisosse.webp">
+        <img src="img/chilisosse.webp" alt="">
+      </picture>
+      <div>
+        <h5>Rezept-Tipp</h5>
+        <h3>Chili-Soße</h3>
+        <date>10.1.2023</date>
+        <p>Eine Chilisoße schmeckt besonders köstlich in Kombination mit Fleisch aber auch als Dip zu Chips & Co. Ein tolles schnelles Saucen Rezept.</p>
+        <a>Weiterlesen...</a>
+      </div>
+    </div>
+    <div class="experience">
+      <h3> Unsere Erfahrung mit C. annuum im Garten</h3>
+      <img src="img/growing-chili-experience.avif">
+      <div>
+        <h5>blabalbla</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur, ducimus eaque earum ex fugit laborum molestiae necessitatibus, nemo officia officiis repellat suscipit, tempore? Error facere nam quas quos ut?</p>
+        <a>Weiterlesen...</a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="print-footer">
+    <a href="contact.html">Kontakt</a>
+    <a>DSGVO</a>
+    <a>Impressium</a>
+    <a href="#top">Zum Seitenanfang</a>
+  </footer>
+
+  <script>
+    function resetMenu(width) {
+      if (width >= 900){
+        document.getElementById("myLinks").removeAttribute("style");
+      }
+    }
+  </script>
+
+</main>
+</body>
+</html>

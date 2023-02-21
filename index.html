@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME Chili-Pot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onresize="resetMenu(window.innerWidth)">
+<header>
+    <a href="index.html" class="active"> <div class="logo-container">
+        <img class="logo" src="img/Logo.PNG">
+        <h3>Chili_Pot</h3>
+    </div>
+    </a>
+    <nav id="print-nav">
+        <div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="myIcon" class="fa fa-bars"></i>
+        </a>
+        </div>
+        <script>
+            function myFunction() {
+                let x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <ul id="myLinks">
+            <li><a href="Capsicuum annuum.html"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum annuum</span></a></li>
+            <li><a href="#baccatum"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;baccatum</span></a></li>
+            <li><a href="#chinense"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;hinense</span></a></li>
+            <li><a href="#frutescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;frutescens</span></a></li>
+            <li><a href="#pubescens"><span style="white-space: nowrap;"><img class="flame-icon" src="img/flame-icon.png">Capsicum&nbsp;pubescens</span></a></li>
+        </ul>
+    </nav>
+
+    <!--JavaScript function: when display block -> unsichtbar -->
+
+
+</header>
+
+
+<main>
+    <section>
+        <div class="blending-images">
+            <h1>Chilis für den eigenen Garten: die Arten im Überblick</h1>
+            <p>Unzählige Chilisorten bieten eine große Vielfalt an Exemplaren, die in erster Linie in fünf Artengruppen und zusätzlich in Schärfegrad von eins (mild) bis zehn (feurig scharf) einteilen. Zusätzlich sind fruchtige Geschmacksnuancen ebenso erhältlich, wie süße Chilis. Welche es gibt, die für den hiesigen Anbau geeignet sind, wird im Folgenden verraten.</p>
+        </div>
+
+    </section>
+    <section id="annuum">
+        <img class="animated-pic" src="img/funny_burning_chili.jpg">
+        <h3>Chilisorten der Capsicum annuum</h3>
+        <p>Die Capsicum annuum, auch als Spanischer Pfeffer bekannt, ist die am weitesten verbreitete Chiliart, der auch die herkömmliche Gemüsepaprika mit einem milden, süßlichen Geschmack angehört. Erhältlich ist diese bis Schärfegrad 10. Sie ist gleichermaßen unter den erfahrenen Hobbygärtner sowie Anfängern beliebt, weil sie ertragreich ist und gelegentliche Pflegefehler verzeiht.</p>
+        <img src="img/capsicum-annuum.webp">
+    </section>
+
+    <section id="baccatum">
+        <img class="animated-pic" src="img/funny_burning_chili.jpg">
+        <h3>Chilisorten der Capsicum baccatum</h3>
+        <p>Die Capsicum baccatum erfreut sich vor allem in Süd- und Mittelamerika großer Beliebtheit. Sie zeichnet sich durch ein zartes Fruchtaroma aus.</p>
+        <img src="img/Capsicum baccatum.jpg">
+    </section>
+    <section id="chinense">
+        <img class="animated-pic" src="img/funny_burning_chili.jpg">
+        <h3>Chilisorten der Capsicum chinense</h3>
+        <p>Wenngleich aufgrund des Namens China als Herkunftsland vermuten lässt, so stammt sie tatsächlich aus Südamerika. Hierunter befinden sich die schärfsten Chilisorten, die in Mitteleuropa angebaut werden können. Auf fruchtige Aromen muss nicht verzichtet werden. In der Pflege ist diese Chiliart etwas anspruchsvoller.</p>
+        <img src="img/Capsicum chinense.jpg">
+    </section>
+    <section id="frutescens">
+        <img class="animated-pic" src="img/funny_burning_chili.jpg">
+        <h3>Chilisorten der Capsicum frutescens</h3>
+        <p>Die Capsicum frutescens Sorten weisen nahezu doppelt so viel Capsaicin auf, als in den meisten Chilisorten der Capsicum annuum zu finden ist, wenngleich auch dort einige Exemplare den Schärfegrad 10 erreichen.</p>
+        <img src="img/Capsicum frutescens.jpg">
+    </section>
+    <section  id="pubescens">
+        <img class="animated-pic" src="img/funny_burning_chili.jpg">
+        <h3>Chilisorten der Capsicum pubescens</h3>
+        <p>Die Capsicum pubescens ist hierzulande noch eine Rarität, weil sie bisher noch nicht im kommerziellen Anbau angekommen und dementsprechend unbekannt ist. Allerdings interessieren sich vermehrt Hobbygärtner für diese Chiliart, deren Samen über Privat- oder Spezialanbieter erhältlich sind. In ihrer Schärfe pendeln sich die Chilisorten im oberen Bereich ein. Im Vergleich zu den anderen Chiliarten verholzen die Pflanzen schneller und wachsen meist baumartig.</p>
+        <img src="img/Capsicum pubescens.jpg">
+    </section>
+</main>
+
+<footer id="print-footer">
+    <a href="contact.html">Kontakt</a>
+    <a>DSGVO</a>
+    <a>Impressium</a>
+    <a href="#top">Zum Seitenanfang</a>
+</footer>
+
+
+
+<script>
+    function resetMenu(width) {
+        if (width >= 900){
+            document.getElementById("myLinks").removeAttribute("style");
+        }
+    }
+</script>
+</body>
+
+
+</html>

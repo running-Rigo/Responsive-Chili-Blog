@@ -1,0 +1,446 @@
+:root {
+    --color-light-violett: #959cac;
+    --color-yellow-orange: #ff8605;
+    /*
+    --color-chili-yellow: #fac173;
+
+     */
+
+    --color-chili-yellow: #fcbf59;
+    --color-dark-violett: #743b89;
+    --color-leaf-green: #357538;
+    --color-logo-red: #ff3231;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--color-chili-yellow);
+    padding: 1em 2em;
+    border-bottom: 2vh solid white;
+}
+
+h3{
+    font-family: "Courier New", monospace;
+    font-size: calc(16px + 3 * ((100vw - 320px) / 380));
+}
+
+.logo-container{
+    display: flex;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.logo-container img{
+    height: inherit;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.home-link{
+    height: 30px;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    height: inherit;
+    background-color: var(--color-chili-yellow);
+    color: black;
+    text-decoration: none;
+}
+
+
+/*Navbar für weiten Screen*/
+nav{
+   min-width: 80%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    font-size: calc(8px + 3 * ((100vw - 320px) / 380));
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+}
+
+nav li{
+    margin-left: 2em;
+}
+
+.flame-icon{
+    width: 1em;
+    margin: 5%;
+    padding:  1%;
+    background-color: var(--color-logo-red);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.blending-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 70vh;
+    background-image: url("img/background-chilis1.jpg"), url("img/background-image2.webp");
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.blending-images p{
+    max-width: 50vw;
+    background-color: var(--color-light-violett);
+    color: white;
+    opacity: 0.9;
+    padding: 1%;
+    font-size: calc(8px + 3 * ((100vw - 320px) / 380));
+    border-radius: 10px;
+}
+
+.blending-images h1{
+    margin-left: 2%;
+}
+
+h1{
+    color: white;
+    font-size: calc(30px + 3 * ((100vw - 320px) / 380));
+    text-shadow: 0 0 5px black;
+    font-family: "Courier-New", monospace;
+}
+
+/* sections with chili-families*/
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+section img{
+    max-width: 70vw;
+}
+
+section p{
+    max-width: 70%;
+    font-size: calc(8px + 3 * ((100vw - 320px) / 380));
+}
+
+.animated-pic{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    from {left: -200px}
+    to {left: 200px}
+}
+
+
+/*
+Detailseite für C. annuum
+ */
+.main-img img{
+    -webkit-filter: blur(2px);
+    filter: blur(5px);
+    width: 100vw;
+    margin-bottom: 5em;
+}
+
+.main-img h1{
+ text-align: center;
+}
+
+.sort-img{
+    max-height: 70%;
+}
+
+.chili-sort{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 5px solid var(--color-leaf-green);
+    background-color: darkkhaki;
+    grid-row: span 2;
+    border-radius: 5px;
+}
+
+.experience{
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid var(--color-logo-red);
+    background-color: darksalmon;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.experience img{
+    max-width: 100%;
+    height: 50%;
+}
+
+.recipe{
+    display: flex;
+    grid-column: span 2;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 5px solid var(--color-chili-yellow);
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 1em;
+}
+.recipe div{
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 250px;
+}
+
+.recipe img{
+    height: 250px;
+}
+
+
+.grid {
+    padding: 2em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: row dense;
+}
+
+.grid h3{
+    font-size: calc(8px + 3 * ((100vw - 320px) / 380));
+}
+
+.bold{
+    font-weight: bold;
+}
+
+h4{
+    font-family: "Courier New", monospace;
+}
+
+/*
+Contact-Seite
+ */
+
+.contact-main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.form-field{
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    height: 50%;
+    border: 2px solid black;
+    width: 50vw;
+    background-color: #357538;
+    color: white;
+}
+
+#submit{
+    background-color: peachpuff;
+    padding: 0.5em 1em;
+    border: 2px solid var(--color-logo-red);
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+    background-color: var(--color-dark-violett);
+    color: white;
+    font-family: "Courier New", monospace;
+    height: 5vh;
+}
+
+footer a{
+    color: white;
+}
+
+
+#myIcon{
+    visibility: hidden;
+}
+
+#myLinks{
+    visibility: visible;
+}
+
+
+
+@media (max-width: 1500px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 50px;
+        grid-auto-flow: row dense;
+    }
+
+}
+
+@media (max-width: 900px) {
+    section p, .blending-images p{
+        font-size: 16px;
+    }
+
+
+    #myLinks {
+        display: none;
+        background-color: var(--color-chili-yellow) ;
+        padding:5% 12% 10% 10%;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 100px;
+    }
+
+    #myIcon{
+        position: absolute;
+        top: 50px;
+        right: 10%;
+        visibility: visible;
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 700px){
+    .recipe{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .recipe picture{
+        text-align: center;
+    }
+
+    .experience{
+        grid-column: span 1;
+    }
+
+    .grid h3{
+        font-size: 16px;
+        font-weight: bold
+    }
+
+    nav ul{
+        font-size: 12px;
+    }
+    @keyframes mymove {
+        from {left: -100px}
+        to {left: 100px}
+    }
+
+    form{
+        width: 90vw;
+    }
+
+    footer{
+        padding-left: 2%;
+        height: 15vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 30px;
+        grid-auto-flow: row dense;
+        grid-gap: 1em;
+    }
+
+
+
+}
+
+@media print{
+    #print-nav, #print-footer{
+        display: none;
+    }
+
+    img:not(.logo){
+        display: none;
+    }
+
+    .grid{
+        display: block;
+    }
+
+    .recipe div{
+        width: 100vw;
+    }
+
+    h1{
+        color: black;
+        font-size: calc(30px + 3 * ((100vw - 320px) / 380));
+        text-shadow: none;
+        font-family: "Courier-New", monospace;
+    }
+
+    form{
+        color: black;
+    }
+
+    .blending-images p{
+        width: 100vw;
+        max-width: none;
+        color: black;
+        opacity: unset;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1vh;
+    }
+
+    section p{
+        max-width: unset;
+        width: 100vw;
+        font-size: calc(8px + 3 * ((100vw - 320px) / 380));
+    }
+
+
+}
+
+
+
+
+
+
+
+
